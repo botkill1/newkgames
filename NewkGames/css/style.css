@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Electrolize', sans-serif;
+}
+
+/* mainpage */
+
+.main {
+    background-image: url('../static/assets/valorant.jpg');
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #1a1919;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.play-btn {
+    cursor: pointer;
+    position: absolute;
+    bottom: 10vh;
+    padding: 1rem 3rem;
+    border: 1px whitesmoke solid;
+    border-radius: 0.2rem;
+    color: white;
+    background-color: tomato;
+    opacity: 0.8;
+}
+
+.play-btn:hover {
+    opacity: 1;
+    box-shadow: 3px 3px rgb(219, 175, 175);
+}
+
+/* Navbar */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    color: whitesmoke;
+    background-color: #3f1320;
+    opacity: 0.96;
+}
+
+.brand-name {
+    padding-left: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.brand-name a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.links {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links .link {
+    list-style-type: none;
+}
+
+.links .link a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.links .link.active {
+    border-bottom: goldenrod solid 3px;
+}
+
+.links .link:hover {
+    border-bottom: goldenrod solid 3px;
+}
+
+
+
+/* Game-info page */
+
+.game-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url('../static/assets/game-info.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #1a1919;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.info-content {
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 50%;
+    letter-spacing: 2px;
+    font-size: 1.02rem;
+    height: fit-content;
+    padding: 5rem;
+    text-align: justify;
+    /* opacity: 0.5; */
+}
+
+
+
+/* ranks page */
+
+.ranks {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #1a1919;
+    background-size: cover;
+    width: 100%;
+    min-height: 90vh;
+}
+
+.ranks-content {
+    /* margin-top: -5rem; */
+    padding: 0 2rem 0 2rem;
+    text-align: justify;
+    letter-spacing: 2px;
+    font-size: 1.02rem;
+}
+
+.ranks-img {
+    height: auto;
+    width: 70vw;
+    padding-right: 1rem;
+}
+
+/* Ranks ends */
+
+/* Characters page */
+
+.characters {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #1a1919;
+    background-size: cover;
+    width: 100%;
+    min-height: 90vh;
+}
+
+.characters-content {
+    padding: 0 2rem 0 2rem;
+    text-align: justify;
+    letter-spacing: 2px;
+    font-size: 1.02rem;
+    flex: 40;
+}
+
+.characters-list {
+    flex: 60;
+    height: 90vh;
+    overflow-y: scroll;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: flex-start; */
+}
+
+.character-card {
+    margin: 1rem 0 1rem 0;
+    width: 60%;
+    height: fit-content;
+    /* overflow-x: hidden; */
+    display: flex;
+    border: whitesmoke 0.2rem solid;
+    border-radius: 1rem;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.character-card img {
+    height: 50vh;
+    width: auto;
+    /* background-position: center; */
+    /* object-position: center; */
+}
+
+.character-card .character-info {
+    padding: 1rem;
+}
+
+.character-card .character-info h2 {
+    text-align: center;
+}
+
+.characters-list::-webkit-scrollbar {
+    display: none;
+}
+
+/* character ends */
+
+/* Weapons page */
+
+.weapons {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #1a1919;
+    background-size: cover;
+    width: 100%;
+    min-height: 90vh;
+}
+
+.weapons-content {
+    padding: 0 2rem 0 2rem;
+    text-align: justify;
+    letter-spacing: 2px;
+    font-size: 1.02rem;
+    flex: 40;
+}
+
+.weapons-list {
+    flex: 60;
+    height: 90vh;
+    overflow-y: scroll;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: flex-start; */
+}
+
+.weapon-card {
+    margin: 1rem 0 1rem 0;
+    width: 50%;
+    height: fit-content;
+    /* overflow-x: hidden; */
+    display: flex;
+    border: whitesmoke 0.2rem solid;
+    border-radius: 1rem;
+    flex-direction: column;
+    text-align: center;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.weapon-card img {
+    height: 30vh;
+    width: auto;
+    object-fit: scale-down;
+    /* background-position: center; */
+    /* object-position: center; */
+}
+
+.weapon-card .weapon-info {
+    padding: 1rem;
+}
+
+.weapon-card .weapon-info h2 {
+    text-align: center;
+}
+
+.weapons-list::-webkit-scrollbar {
+    display: none;
+}
+
+/* Weapons ends */
+
+/* PC requirement page */
+
+.requirements {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #000000;
+    background-size: cover;
+    width: 100%;
+    min-height: 90vh;
+    padding: 1rem;
+}
+
+.requirements-content {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    background-color: rgba(63, 62, 62, 0.5);
+    width: 90%;
+    letter-spacing: 2px;
+    font-size: 1.02rem;
+    height: fit-content;
+    padding: 5rem;
+    text-align: justify;
+    /* opacity: 0.5; */
+}
+
+.specs-info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.specs-info div {
+    flex: 1;
+    padding: 1rem;
+    text-align: justify;
+    line-height: 1.2rem;
+}
+
+/* PC requirements ends */
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 0.8rem;
+}
